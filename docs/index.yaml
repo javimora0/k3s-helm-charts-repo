@@ -12,5 +12,5 @@ entries:
     - https://github.com/prometheus-operator/kube-prometheus
     type: application
     urls:
-    - https://javimora0.github.io/k3s-helm-charts-repo/charts/kube-prometheus-stack-68.1.0.tgz
+    - https://javimora0.github.io/k3s-helm-charts-repo/docs/kube-prometheus-stack-68.1.0.tgz
     version: 68.1.0

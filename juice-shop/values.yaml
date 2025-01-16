@@ -9,6 +9,6 @@ service:
   port: 3000
 
 ingress:
-  enabled: false
+  enabled: true
   host: juice-shop.local.com
   annotations: {}

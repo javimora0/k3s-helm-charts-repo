@@ -1,0 +1,14 @@
+replicaCount: 1
+image:
+  repository: bkimminich/juice-shop
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 3000
+
+ingress:
+  enabled: false
+  host: juice-shop.local.com
+  annotations: {}

@@ -1,0 +1,16 @@
+# filepath: /C:/Users/jricom/Personal/k3s/k3s-helm-charts-repo/grafana/templates/dashboard-configmaps.yaml
+{{- $files := .Files.Glob "dashboards/*.json" }}
+{{- range $path, $bytes := $files }}
+{{- $base := base $path }}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: grafana-dashboard-{{ $base | replace ".json" "" | replace "_" "-" | replace "." "-" | lower }}
+  labels:
+    app: grafana
+    grafana_dashboard: "1"
+data:
+  {{ $base }}: |
+    {{ $bytes | indent 4 }}
+---
+{{- end }}

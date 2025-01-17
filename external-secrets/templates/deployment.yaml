@@ -15,7 +15,7 @@ spec:
       labels:
         app: external-secrets
     spec:
-      serviceAccountName: {{ .Values.serviceAccount.name | default .Values.serviceAccount.create | ternary (include "external-secrets.serviceAccountName" .) "" }}
+      serviceAccountName: external-secrets
       securityContext: {{- toYaml .Values.podSecurityContext | nindent 8 }}
       containers:
         - name: external-secrets

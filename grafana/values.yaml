@@ -1,0 +1,29 @@
+replicaCount: 1
+image:
+  repository: grafana/grafana
+  tag: 9.4.7
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 3000
+
+ingress:
+  enabled: true
+  host: grafana.local.com
+  annotations: {}
+
+# Agregamos persistencia
+persistence:
+  enabled: true
+  storageClass: ""
+  accessMode: ReadWriteOnce
+  size: 1Gi
+
+resources:
+  requests:
+    memory: 256Mi
+    cpu: 100m
+  limits:
+    memory: 512Mi
+    cpu: 200m

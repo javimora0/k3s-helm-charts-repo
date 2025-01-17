@@ -1,0 +1,21 @@
+replicaCount: 1
+
+image:
+  repository: external-secrets/external-secrets
+  tag: latest
+  pullPolicy: IfNotPresent
+
+serviceAccount:
+  create: true
+  name: ""
+
+rbac:
+  create: true
+
+podSecurityContext: {}
+securityContext: {}
+
+resources: {}
+nodeSelector: {}
+tolerations: []
+affinity: {}

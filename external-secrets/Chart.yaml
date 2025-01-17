@@ -1,0 +1,5 @@
+apiVersion: v2
+name: external-secrets
+description: Helm chart for deploying External Secrets Operator
+version: 0.1.0
+appVersion: "latest"

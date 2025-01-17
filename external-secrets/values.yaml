@@ -2,7 +2,7 @@ replicaCount: 1
 
 image:
   repository: external-secrets/external-secrets
-  tag: latest
+  tag: v0.5.1
   pullPolicy: IfNotPresent
 
 serviceAccount:

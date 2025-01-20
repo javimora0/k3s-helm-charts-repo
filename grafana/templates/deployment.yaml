@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "grafana.fullname" . }}
+  name: grafana2
   namespace: {{ include "grafana.namespace" . }}
   labels:
     {{- include "grafana.labels" . | nindent 4 }}

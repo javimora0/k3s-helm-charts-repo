@@ -1,6 +1,4 @@
 global:
-  dashboards:
-    argocd-dashboard: true
   # -- Overrides the Docker registry globally for all images
   imageRegistry: null
 
@@ -1551,4 +1549,3 @@ extraObjects: []
 # Alternatively, if you wish to allow secret values to be exposed in the rendered grafana.ini configmap,
 # you can disable this check by setting assertNoLeakedSecrets to false.
 assertNoLeakedSecrets: true
-

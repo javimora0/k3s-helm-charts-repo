@@ -6,4 +6,4 @@ grafana:
     enabled: true
     ingressClassName: traefik
     hosts:
-      grafana.local.com
+      - grafana.local.com

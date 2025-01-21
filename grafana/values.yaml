@@ -2,6 +2,9 @@ grafana:
   adminUser: admin
   adminPassword: admin
 
+  persistence:
+    enabled: true
+ 
   ingress:
     enabled: true
     ingressClassName: traefik

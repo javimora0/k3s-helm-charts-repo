@@ -10,3 +10,7 @@ grafana:
   sidecar:
     dashboards:
       enabled: true
+
+global:
+  dashboards:
+    argocd-dashboard: true

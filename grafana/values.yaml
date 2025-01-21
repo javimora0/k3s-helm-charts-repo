@@ -7,3 +7,6 @@ grafana:
     ingressClassName: traefik
     hosts:
       - grafana.local.com
+  sidecar:
+    dashboards:
+      enabled: true

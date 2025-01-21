@@ -11,6 +11,17 @@ grafana:
     dashboards:
       enabled: true
 
+  datasources:
+    datasources.yaml:
+      apiVersion: 1
+      datasources:
+        - name: Prometheus
+          type: prometheus
+          access: proxy
+          url: http://prometheus-server.prometheus.svc.cluster.local
+          isDefault: true
+          editable: true
+
 global:
   dashboards:
     argocd-dashboard: true

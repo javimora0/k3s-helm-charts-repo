@@ -24,7 +24,6 @@ grafana:
           url: http://prometheus-server.prometheus.svc.cluster.local
           isDefault: true
           editable: true
-          uid: prometheusdatasource
 
 global:
   dashboards:

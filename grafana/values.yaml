@@ -24,4 +24,4 @@ grafana:
 
 global:
   dashboards:
-    argocd-dashboard: true
+    cluster-dashboard: true

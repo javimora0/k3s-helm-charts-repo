@@ -1,3 +1,9 @@
 grafana:
   adminUser: admin
   adminPassword: admin
+
+  ingress:
+    enabled: true
+    ingressClassName: traefik
+    hosts:
+      grafana.local.com
